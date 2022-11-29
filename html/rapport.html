@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport för U3 i Webbteknik 1</title>
+    <style>
+        html {
+            font-size: 16px
+        }
+        body {
+            background-color: #FFF;
+            color: #000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            max-width: 80ch;
+            margin-left: 2ch;
+        }
+        header,
+        section {
+            border-bottom: 1px solid #999;
+        }
+        img {
+            max-width: 100%;
+        }
+        p {
+            text-align: justify;
+        }
+        h2 {
+            margin-bottom: 0.2em;
+        }
+        h3 {
+            margin-top: 0.2em;
+        }
+
+        em{
+            color: rgb(13, 60, 214);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rapport för U3</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Syfte och målgrupp</h2>
+            <p>I denna uppgift skapades en webbplats för en fiktiv välgörenhetsorganisation som döpts till "the PetRescue". Organisationen är ett form av djurhem som tar hand om och förmedlar katter, hundar samt olika mindre husdjur.
+                <!-- Ange vad det är för företag eller annan organisation. -->
+            </p>
+            <p>Syfte med webbplatsen är delvis att skapa ett medium som djurhemmet kan utnyttja för att nå ut till en bredare målgrupp som inkluderar personer vars geografiska läge är avlägset i forhållande till djurhemmet. Vidare så syftar webbplatsen på att skapa en digital platform som tydligt framställer vilka djur som finns tillgängliga for adoption. Målet med detta är att förhoppningsvis öka antalet adoptioner. Webbplatsen ska även bidra till ökade möjligheter för intresserade att stötta djurhemmet genom diverse medel. Utöver detta är det även viktigt för organisationen att websidan förmedlar de mål och tankesätt som djurhemmet står för när det kommer till djurhållning och deras arbete. Avslutningsvis vill företaget gärna att det ska finnas information om vart man ska vända sig om man har djurrelaterade problem som djurhemmet inte direkt kan hjälpa med. Detta då de ofta får telefonsamtal från personer som frågar om vetrinärer eller har frågor relaterade till vilda djur.
+                <!-- Fyll på med kort beskrivning som anger syftet med webbplatsen. -->
+                <!-- Alltså syfte och mål med webbplatsen för företaget eller organisationen. -->
+            </p>
+            <p>Baserat på den målgrupps analys som gjordes kan det slås fast att det finns fyra olika typer av huvud-målgrupper. Målgrupperna som identifierats inkluderar följande:
+
+                <h3>1. Personer intresserade av att adoption: </h3>
+                <p>Personerna i denna grupp har ett spcifikt mål. För dem är det viktigt att veta vilka djur som kan adopteras samt att finna information och bilder på djuren. Denna grupp är också intresserad av hur seriöst djurhemmet är. De vill veta hur djuren behandlas och hur adoptions processen fungerar. Möjlighet att genomföra en intresse anmälan samt att hitta kontakt information till djurhemmet är också viktigt. </p>
+
+                <h3>2. Personer intresserade av att stötta djurhemmet (ekonomiskt): </h3>
+                <p>Personerna i denna grupp är intresserade av att donera pengar eller prylar till organisationen. De vill gärna ha information om vart pengarna går och hur donationer används. Vidare vill de ha information om hur man kan göra en donation och de vill gärna kuna genomföra donationer direkt online. Vidare så är det viktigt för denna grupp att kunna avgöra om djurhemmet ar seriöst eller inte.</p>
+
+                <h3>3. Personer intresserade av att stötta djurhemmet (genom icke ekonomiska medel):</h3>
+                <p>Dessa personer vill precis som föregående ha information om hur djurhemmet fungerar och hur seriöst det är. De vill även ha information om hur man kan stödja djurhemmet om man inte kan ge ekonomiskt stöd. Det vill säga, bli foster hem, hjälpa med att städa, gå ut med hundar etcetera. </p>
+
+                <h3>4. Djurintresserade eller nyfikna personer</h3>
+                <p>Dessa personer är främst intresserade av bilder och har inget riktigt mål. De kan även vara intresserade av att hitta generell information som ett djurhem kan tankas ha, samt att följa organizationen på sociala medier för att se mera djur. </p>
+
+
+                <!-- Fyll på med beskrivning som identifierar målgruppen. -->
+                <!-- Ange också eventuell uppdelning i delgrupper. -->
+            </p>
+            <h3>Användarnas behov</h3>
+            <!-- Skriv korta punkter som beskriver vilka behov webbplatsen ska uppfylla. -->
+            <!-- Altså resultatet av målgruppsanalysen. Beskrivning av hur du gjort analysen ska inte finnas med. -->
+            <ul>
+                <li>Få information om hur djuren mår på djurhemmet</li>
+                <li>Få information om hur djurhemmet arbetar</li>
+                <li>Kunna avgöra om djurhemmet är seriöst eller inte</li>
+                <li>Få information om djuren och deras personligheter</li>
+                <li>kunna stötta djurhemmet ekonomiskt</li>
+                <li>Ta reda på hur man adopterar ett djur</li>
+                <li>kunna besöka djurhemmet</li>
+                <li>kunna kontakta djurhemmet om man vill besöka eller adoptera ett djur</li>
+                <li>kunna se bilder på många djur</li>
+                <li>kunna stötta djurhemmet genom icke ekonomiska medel</li>
+                <li>få information om vad djurhemmet gör</li>
+            </ul>
+        </section>
+        <section>
+            <h2>2. Kravspecifikation</h2>
+            <!-- Kravspecifikationen ska vara utformad enligt Garretts modell på det sätt som visas i föreläsningar och laboration. -->
+            <h3>Innehåll</h3>
+            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD innehållet ska bestå av. -->
+            <ul>
+                <li>Bilder på alla djur som är tillgängliga för adoption</li>
+                <li>Information om respektive djurs ras, kön, storlek och ålder</li>
+                <li>Kort beskrivining (1-5 meningar) av varje djurs ursprung och deras personlighetsdrag</li>
+                <li>Lista över djurhemmets sponsorer</li>
+                <li>Kontakt information includerande tel, e-mail och address till djurhemmet</li>
+                <li>Djurhemmets öppettider</li>
+                <li>Karta med placering av address till djurhemmet</li>
+                <li>1 bild av djurhemmet</li>
+                <li>Nödnummer till 1 veterinar i området</li>
+                <li>Nödnummer till 1 hjälp linje för hantering av vilda djur</li>
+                <li>lista över djurhemmets 4 huvud-riktlinjer</li>
+                <li>Information om när djurhemmet grundades och av vem</li>
+                <li>Bilder, namn och uppgifter rörande de personer som jobbar på djurhemmet</li>
+                <li>lista över fysiska objekt som djurhemmet är i behov av i nuläget</li>
+                <li>Priser och längd av medlämsskap</li>
+                <li>Information om de krav som måste uppfyllas för att bli foster familj</li>
+                <li>Information om de krav som måste uppfyllas för att adoptera ett djur</li>
+                <li>Information om kostnader för alla typer av adoptioner</li>
+                <li>Kontakt information till person ansvarig för donation av fysiska saker</li>
+                <li>Kort beskriving (1-5 meningar) av vad en foster familj är</li>
+                <li>Kort beskriving (1-5 meningar) av hur ett medlämsskap hjälper djurhemmet</li>
+                <li>Kort beskriving (1-5 meningar) av vad personen i fråga tjänar på att bli medlem</li>
+            
+
+            </ul>
+            <h3>Funktion</h3>
+            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
+            <ul>
+                <li>Användare ska ha möjlighet att skicka medelande genom kontaktformulär</li>
+                <li>Anvandaren ska kunna genomföra betalning online via minst 2 betalnings metoder</li>
+                <li>Anvandaren ska kunna registrera sig som medlem hos djurhemmet</li>
+                <li>Anvandaren ska kunna besöka djurhemmets sociala medier (Facebook och Instagram)</li>
+                <li>Bilder på djur ska kunna förstoras</li>
+            </ul>
+        </section>
+        <section>
+           <h2>3. Beskrivning av arbetet</h2>
+           <!-- Beskriv hur du arbetat med uppgiften. -->
+           <!-- För VG är det viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
+           <p>Arbetet med websidan inleddes med en plannerings fas. Under denna fas användes Garrets design model som utgångspunkt för att skapa en lista innefattande de plan som presenteras i modelen. Vidare skapades en punktlista över det planerade tillvägagångsättet för utförandet av de olika stegen innom design modellen. Efter denna planeringsfas delades arbetet upp och steg för steg efterföljdes de olika planen innom Garrets model så som den beskrivs i (Garret, 2011, s.20-33). Nedan följer en ingående beskrivning av hur arbetet fortskred innom de olika planen. Observera att ingen kodning genomfördes innan fullständig genomgång av design modellen</p>
+
+           <h3>The Strategy plane</h3>
+           <p>Syftet med strategi planet enligt garrets model är att studera produktens mål samt användarnas behov. Inledningsvis fokuserade arbetet i detta projekt på att definera produktens mål. Enligt (Garret, 2011, s.37-41) Produktens mål inkluderar flertalet parametrar sa som Business goals, Brand identity, och sucsess metrics. Denna information kan delvis framställas baserat på intervjuer av personer innom företaget, intervjuer av stake holders, samt genom studier av liknande webbsidor (Ghaoui, 2006). Då denna uppgift endast bygger på ett fiktivt företag kunde inga riktiga intervjuer genomföras. Dock skapades en lista med intervjufrågor som besvarades utifran ett hypotetiskt tänkande. Detta gjordes endast för att sätta sig in i hur företaget i fråga skulle kunna tänkas svara på dessa frågor och därigenom ge förstaelse om målet med produkten. Vidare så genomfördes en studie av 10 olika hemsidor av andra djurhem. Varje sida analyserades utifran tre olika punkter, vanliga funktioner, vanligt innehall samt typisk layout. Resultatet sammanställdes i en lista.</p>
+           <p>Efter att produktens mål klargjorts så studerades anvandärnas behov. Av Garret (2011, s.46) beskrivs anvandärnas behov som ett resultat av olika typer av användar studier så som intervjuer, frågeformular samt grupp-studier. I syfte att första anvandärnas behov skapades en lista med relevanta frågor som sedan sammanställdes i ett frågeformular med hjälp av tjänsten survivo. Formuläret besvarades av 11 peroner och resultatet sammanställdes i en tabell.</p>
+
+           <h3>The Scope plane</h3>
+           <p>Syftet med denna del i garrets model är att definera de funktionella och innehålsmassiga kraven för webbsidan (Garret, 2011, s.29). För att strukturera arbetet genomfördes sammanställningen av de funktionella och innehållsmässiga kraven separat. Stegvis kontrollerades alla produkt mål och andvändar behov som sammlats in i föregående steg. Darefter konverterades dessa till krav för funktionalitet samt innehållet. Efter att en krav lista skapats genomfördes en kvalitets koll for att klarställa kravens klarhet. detta gjordes med garrets riktlinjer i baktanke rörande formatering krav (Garret, 2011, s.68-74). Denna process var lång och flertalet iterationer gjordes för att fastställa att kraven va mätbara och riktiga. </p>
+
+           <h3>The Structure Plane</h3>
+           <p>Syftet med detta steg enligt garrets model är att besvara hur användaren ska kunna interagera med produkten samt hur informationen ska struktureras (Garret, 2011, s.81-105). Åter igen delades arbetet upp i två segment varav ena delen fokuserade på interaktions designen och den andra på informations arkitekturen. Med kravspecifikationen som grund studerades de olika funktionaliteterna som skulle komma att vara narvarande pa sidan. Darefter sakpades en lista med interaktioner och reaktioner som skulle komma att behövas på hemsidan. Exempelvis lades förslag fram på vilka reaktioner som ska ske om anvandaren fyller i ett formular. frågor som besvarades var exempelvis, hur kan användar fel undvikas, hur ska anvandar fel hanteras och hur ska feed back ges till användaren. </p>
+
+           <p>Vidare så fastställdes informations arkitekturen för hemsidan. Baserat på kravspesifikationen organiserades ineållet i olika grupper baserat på dess relevans. Vidare så strukturerades innehallet genom att skapa en informations herarki. Detta gjordes genom att skapa en site map for visualisering av innehöllets struktur.</p>
+           <img src="../IMG/Infotmation Architecture.png" alt="">
+
+           <h3>The Skeleton Plane</h3>
+           <p>I enlighet med garrets model och föreslagna genomförande som presenteras i (Garret, 2011, s.108-109) så delades arbetet i detta plan in i 3 delar. De tre delarna inkluderade, interface design, navigation design och information design. Inledningsvis kartlades placeringen av de interaktiva elementen på hemsidan. Flertalet olika prototyper skapades för layouten av de interaktiva elemetnen. detta gjordes i programmet figma. Placeringen av de interaktiva elementen avgjordes baserat på de olika elementens herarki som definerats i föregånde steg. Tanken med detta var att skapa en intuetiv placering av de olika interaktions elementen for att anvandaren automatiskt skulle kunna avgöra vilka delar som är viktiga samt oviktiga så som det beskrivs av Garret (2011, s.114)</p> 
+           <p>Darefter genomfördes en design av websidans navigerings system. Syftet med detta var skapa en navigations layout som skulle möjliggöra det för anvandären att enkelt röra sig mellan olika delar på hemsidan. Även har skapades flera prototyper i figma. Prototyperna inkluderade exempel på utformning av den lokal, global, supplementary och courtesy navigeringen.</p>
+
+           <p>Vidare så genomfördes en övergripande analys av informations designen. Baserat på den informations arkitektur som tidigare skapats gjordes en nogrannare genomgång för att vidare strukturera de olika informations elementen. Olika typer av information arrangerades och grupperades med anvandarnas mål i åtanke så som det beskrivs av Garret (2011, s.126). </p>
+
+           <p>Avslutningsvis skapades en wireframe där alla design element kombinerades. Denna metod är lämplig för att få en överblick över den generella strukturen av websidan (Robins, 2018, s.6-7; Garret, 2011, s.128-131)</p>
+
+           <h3>The Surface Plane</h3>
+           <p>Syftet med detta steg i garrets design model är att visuellt binda samman de olika elementen i hemsidans skelet som tidigare skapats (Garret, 2011, s.20-33). I detta projekt skapades inledningsvis en grafisk profil för hemsidan. Den grafiska profilen syftade på att ge hemsidan en enhetligt visuell design. Detta gjordes genom att välja ut ett fåtal färger, typsnitt och mönster som skulle användas på hemsidan (Garret, 2011, s.145). Därefter skapades en visuell design prototyp baserad på den layout som skapats i föregående steg. Färgkodningen av olika elemet gjordes för att skapa en visuell herarki i enlighet med hemisdans skelet.</p>
+
+           <h3>Teknisk framstallning</h3>
+           <p>Efter att alla stegen i garrets design model genomgåtts påbörjades den tekniska framstallningen av hemsidan. Websidan skapades helt utifran den design och layouten som resulterade av den tidigare design processen. Dock gjordes vissa förandringar i ett senare skede till följd av anvädartestet (se del 6. Användartest). </p>
+        </section>
+
+        <section>
+            <h2>4. Bilder</h2>
+            <!-- Beskriv i en punktlista vilka redigeringar du gjort av bilderna i ett bildredigeringsprogram, för att anpassa dem till hur du använder dem på din webbplats. -->
+            <p>Bilderna har redigerats i ett bildredigeringsprogram, där följande gjorts:</p>
+            <ul>
+                <li>Beskärning av bilder för att centrera viktig information</li>
+                <li>storleksförminskning av bilder i syfte att optimera hemsidan</li>
+                <li>Blureffekt användes på banner för att förminska detailer i bakgrunden.</li>
+                <li>Färg ändring av ikoner för att skapa god kontrast till bakgrund</li>
+            </ul>
+            <!-- För VG anger du också var på din webbplats du använt dig av picture-elementet. Har du använt det på flera ställen, duplicerar du textstycket. -->
+            <!-- Om du inte gjort VG-kravet, tar du bort nedanstående stycke. -->
+        </section>
+        <h2>Picture element</h2>
+        <a href="/HTML/index.html">Hittas under "meet our animals"</a>
+        <section>
+           <h2>5. Utvärdering mot kravspecifikationen</h2>
+           <!-- Kopiera din kravspecifikation hit. Efter varje punkt lägger du till en kort mening som motiverar hur kravet är uppfyllt eller motiverar varför det inte är uppfyllt. -->
+           <h3>Innehåll</h3>
+            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD innehållet ska bestå av. -->
+            <ul>
+           
+                <li>Bilder på alla djur som är tillgängliga för adoption: <em>Bilder på smatliga djur finns.</em></li>
+                <li>Information om respektive djurs ras, kön, storlek och ålder: <em>Ras, kön och ålder ges för alla djur. Dock ges storlek endast för hundar då det ansågs vara orelevant för de andra djurgrupperna.</em></li>
+                <li>Kort beskrivining (1-5 meningar) av varje djurs ursprung och deras personlighetsdrag: <em>Varje djur har en tillhörande text med denna information.</em></li>
+                <li>Lista över djurhemmets sponsorer: <em>sponsorer presenteras på startsidan.</em></li>
+                <li>Kontakt-information med tel, e-mail och address till djurhemmet: <em>Kontaktinformation finns tillgänglig på flera ställen på hemsidan. Bland annat i footer sektionen.</em></li>
+                <li>Djurhemmets öppettider: <em>öppettidert finns i footer.</em></li>
+                <li>Karta med placering av address till djurhemmet: <em>Karta finns inlaggd på kontakt sidan.</em></li>
+                <li>Minst 1 bild av djurhemmet ska finnas: <em>Bild på djurhemet finns under "About us".</em></li>
+                <li>Nödnummer till 1 veterinar i området: <em>Nödnummer finns i footer.</em></li>
+                <li>Nödnummer till 1 hjälplinje för hantering av vilda djur: <em>Nödnummer finns i footer.</em></li>
+                <li>lista över djurhemmets 4 huvud-riktlinjer: <em>Djurhemmets guidlines presenteras under "About us".</em></li>
+                <li>Information om när djurhemmet grundades och av vem: <em>Finns under "About us".</em></li>
+                <li>Bilder, namn och uppgifter rörande de personer som jobbar på djurhemmet: <em>Detta finns under "About us".</em></li>
+                <li>lista över fysiska objekt som djurhemmet är i behov av: <em>Lista över objekt presenteras under "support-donatin".</em></li>
+                <li>Priser och längd av medlämsskap: <em>Priser presenteras under "Support-membership".</em></li>
+                <li>Information om de krav som måste uppfyllas för att bli foster familj: <em>Krav för fosterhem finns under "Support-foster home".</em></li>
+                <li>Information om krav som måste uppfyllas för att adoptera ett djur: <em>Krav på adoption finnd under "the adoption process".</em></li>
+                <li>Information om kostnader för alla typer av adoptioner: <em>Kostnader för adoptioner finns under "The Adoption process".</em></li>
+                <li>Kontakt information till person ansvarig för donation av fysiska saker: <em>Kontaktuppgifter finns under "Support-donations".</em></li>
+                <li>Kort beskriving (1-5 meningar) av vad en foster familj är: <em>Besvaras under "Support foster home".</em></li>
+                <li>Kort beskriving (1-5 meningar) av hur ett medlamsskap hjälper djurhemmet: <em>Besvaras under "Support-membership".</em></li>
+                <li>Kort beskriving (1-5 meningar) av vad personen i fråga tjänar på att bli medlem: <em>Besvaras under "Support Membership".</em></li>
+
+            </ul>
+            <h3>Funktion</h3>
+            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
+            <ul>
+                <li>Användare ska ha möjlighet att skicka medelande genom kontaktfärmular: <em>Kontaktformulär finns under 'contact us'.</em></li>
+                <li>Anvandaren ska kunna genomfora betalning online via minst 2 betalnings metoder <em>Betalnings länkar finns närvarande. dock är dessa ej funktionella då betalning ej ska göras på riktigt eftersom att detta en webbsida för ettfiktionellt företag.</em></li>
+                <li>Anvandaren ska kunna registrera sig som medlem: <em>Medlemsregistrering är möjlig under "support-membership".</em></li>
+                <li>Anvandaren ska kunna besoka djurhemmets sociala medier (Facebook och Instagram) <em>Länkar till instagram och facebook finns i footer.</em></li>
+                <li>Bilder pa djur ska kunna forstoras <em>Detta krav uppfylldes inte då bilderna på djuren redan ansågs ha en tillräcklig storlek och därfor inte skulle tillföra något.</em></li>
+            </ul>
+        </section>
+        <section>
+            <h2>6. Användartest</h2>
+            <h3>- med metoden "Tänka högt" (Thinking Out Loud)</h3>
+            <!-- Endast för VG. Har du inte utfört användartest, tar du bort detta avsnitt (hela section-elementet). -->
+            <!-- Beskriv hur du genomförde användartestet. Ange vilka brister du upptäckte och hur du åtgärdat dem. -->
+            <p>Användar tester genömfordes vid tre tillfällen och innefattade båden desktop och mobil versionen av webbsidan. Ett av testesten genomfördes genom fysiskt möte medans de andra testeten genomfordes via ett videosamtal. Under testerna instruerades testpersonerna att genomföra olika uppgifter som tagits fram i förvag. Uppgifterna som anvandes togs fram och formaterades med de målgrupper som tidigare fastställts som utgångspunkt. Nedan finns en lista över de uppgifter som genomfördes av testpersonerna under användartesterna.   </p>
+                <ul>
+                    <li>Du är intresserad av att adoptera en kanin, försök att ta reda på om djurhemmet har kanniner tillgängliga för adoption.</li>
+                    <li>Du har hittat ett djur som du är intresserad av att adoptera, försok att ta reda på hur du ska gå tillväga för att adoptera djuret.</li>
+                    <li>Du är intresserad av att hjälpa djurhemmet men du kan inte skänka pengar av ekonomiska skäl. försök att hitta information om det går att hjälpa djurhemmet på andra sätt.</li>
+                    <li>Du vill besöka djurhemmet, kan du hitta kontaktuppgifter och deras öppettider.</li>
+                    <li>Du har precis hittat en skadad vildfågel, försök att hitta om det finns någon information som kan hjälpa dig.</li>
+                    <li>Du är intresserad av att stötta djurhememt men vill först veta mer om djurhemmet och hur de arbetar. Kan du hitta denna information?</li>
+                </ul>
+   
+           <p>Inför testet instruerades testpersonerna att tala och och beskriva deras tankegångar under genömforandet av de olika uppgifterna. Noteringar gjordes under testets gång för att identifiera problem och svårigheter med webbsidans design. Avslutligen ställdes några sammanfattande frågor för att få ytterligare insyn i testpersonens intryck och upplevelse av webbsidan. </p>
+           
+           <p>Följande problem identifierades under de två testen</p>
+
+           <ol>
+               <li>Hover effekten som applicerats på logan i navigations baren gav ett negativt intryck och uppfattades som en bug.</li>
+               <li>Användarna hade problem att navigera sig innom support sectionen.</li>
+               <li>Namngivningen av navigations länken "support" var misvissande då det ansågs vara oklart om support rörde support för användaren eller support till djurhemmet.</li>
+               <li>Listan över objekt som djurhemmet gärna accepterade som donation skapade viss förvirring då varje punkt hade en tillhörande punkt som tolkades som en radio knapp och en av testpersonerna försokte trycka på dessa.</li>
+               <li>Sektionen med nöd nummer saknade tydlig visuell markering och tog längre tid an önskat för personerna att identifiera.</li>
+               <li>Drop down menyn i den mobila versionen skapade problem. Då anvandarna klickade på en av de lankarna med lokal navigering hamnade de automatiskt på startsidan. Det tog flera försök innan de forstod att man endast kunde komma åt de lokala länkarna genom att hålla kvar fingret medans de förde fingret mot den lokala länk av intresse.</li>
+               <li>I den mobila versionen fanns det ej mojlighet att enkelt nå webbplatsens startsida, detta då tidigare loga fran desktop version hade gömts.</li>
+               <li>Under sidan "Animals" uppstod förvirring pga närvarandet av en länk till "adoption process" längst ned på sidan i, kombination med den kontakt länk som placerats under varje djur. En av testpersonerna blev osäker på vilken länk som skulle användas för att gå vidare vid intresse av adoption.</li>
+           </ol>
+
+           <p>Följande åtgarder gjordes för att fixa de problem som identifierats</p>
+           <ol>
+               <li>Hover effekten som tidigare användes för att förstora logan  i navigations baren, (och därmed gjorde så att navigationsbaren drastiskt ändrade storlek) ersattes med en opacitets förandring för att ge en mer naturlig och mjuk övergang.</li>
+               <li>En lokal navigering lades till på alla support sidor for att förankla navigeringen.</li>
+               <li>Namngivningen ändrades till "Support the shelter" för att förtydliga innebörden.</li>
+               <li>Stilen på donations listan gjordes om och istället för en img cirkel som stil typ så lades en sträckad linje till.</li>
+               <li>Visuell markering lades till för att upplysa nödnummer.</li>
+               <li>Navigeringen omformaterades helt och istallet for att ha dropdown länkarna som a element gjordes dessa om till checkboxar med tillhörande lable. Genom denna formatering tilläts användaren klicka på drop down länkar utan att föras till en annan sida innan korrekt lokal länk valts.</li>
+               <li>En länk som endast visas i den mobila versionen lades till for att låta användaren ta sig till startsidan.</li>
+               <li>Länken till adoptions processen togs bort för att undvika förvirring som uppstod.</li>
+           </ol>
+
+        </section>
+        <section>
+            <h2>Källförteckning</h2>
+          
+
+            <!-- Endast för VG. Har du inte utfört användartest, tar du bort detta avsnitt (hela section-elementet). -->
+            <!-- Skriv en källförteckning enligt Harvardsystemet för de källor du refererat till i din text. Det ska åtminstone vara Garretts bok. -->
+            <p>   Ghaoui, C. (2006). Encyclopedia of Human Computer Interaction. Idea Group Reference.</p>
+            <p>   Robbins, J. N. (2018). Learning Web Design: A beginners guid to html, css, javascript and webgraphics. O'reilly Media. 5ed.</p> 
+            <p>   Garret, J. J. (2011). The elements of user experience: User-centered design for the web and beyond. New riders.</p>
+        </section>
+    </main>
+</body>
+
+</html>

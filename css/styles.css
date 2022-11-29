@@ -1,0 +1,2165 @@
+
+/*--Base dokument setup--*/
+html, body{
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    background-color: #dddfc4;
+    margin: 0;
+}
+
+body h1{
+    font-size: 25px;
+}
+
+body h2{
+    font-size: 20px;
+}
+
+body p{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 17px;
+}
+
+/*---------------------------------------------------------------The Homepage---------------------------------------------------------*/
+
+/*--|| Homepage body grid layout--*/
+
+.homepage{
+    width: 100%;
+    background-color: #FFFAFA;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content auto min-content auto min-content min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    'banner banner banner'
+    '. wellcome .'
+    '. animals .'
+    '. event .'
+    '. sponsor .'
+    'footer footer footer';
+}
+
+header{                                      /*Header grid area as defined by all pages*/
+    grid-area: navigation;
+}
+
+.hero{
+    grid-area: banner;
+}
+
+.wellcomecontainer{
+    grid-area: wellcome;
+}
+
+.animalcontainer{
+    grid-area: animals;
+}
+
+.eventcontainer{
+    grid-area: event;
+}
+
+.sponsorcontainer{
+    grid-area: sponsor;
+}
+
+footer{                                         /*Footer grid area as defined by all pages*/
+    grid-area: footer;
+}
+
+
+/*---------------------------------------------------------------Navigation bar (all pages)---------------------------------------------------------*/
+/*--|| Navigation bar (all pages)--*/
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFFAFA;
+}
+
+.logo{
+    max-width: 70px;
+    margin-left: 20px;
+}
+
+.navul{
+    list-style: none;
+    padding: 0;
+    margin-left: 1%;
+}
+
+.navli{
+    display: inline-block;
+    margin: 10px;
+}
+
+.navli a, .navli label{
+    text-decoration: none;
+    background-color: #0C543E;
+    padding: 10px;
+    color: #FFFAFA;
+    border-radius: 10px;
+}
+
+#supportbutton label{                                   
+    background-color: #FFFAFA;
+    color: black;
+    border-style: solid;
+    border-color: #0C543E;
+}
+
+.navcontact{                                              
+    flex: 1;
+    text-align: right;
+    padding-right: 5%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navul #mobile-home-link, .navul #mobile-contact-link{
+    display: none;
+}
+
+#animal-checkbox, #about-checkbox, #support-checkbox{          
+    display: none;
+}
+
+#menuicon{
+    display: none;
+}
+
+#menucheckbox{
+    display: none;
+}
+
+
+/*--|| Navigation hover effects (all pages)--*/
+
+.navli a:hover{
+    background-color:#dddfc4;
+    border-style: solid;
+    border-color: #0C543E;
+    color: black;
+}
+
+.navli label:hover{
+    background-color:#dddfc4;
+    border-style: solid;
+    border-color: #0C543E;
+    color: black;
+}
+
+#supportbutton label:hover{
+    background-color:#dddfc4;
+    border-style: solid;
+    border-color: #0C543E;
+    color: black;
+}
+
+.navcontact:hover{
+    color: #0C543E;
+    font-size: 20px;
+}
+
+.navbar .logo:hover{
+        opacity: 0.5;
+}
+
+/*--|| Dropdown Navigation (all pages)--*/
+
+.dropdown-container{
+    background-color:#0c543e;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px ;
+    border-top-right-radius: 20px;
+    color: #ffffff;
+    position: absolute;
+    visibility: hidden;
+}
+
+.dropdown-content{
+    padding: 5px;
+}
+
+.dropdown-content a{
+    display: block;
+}
+
+#supportbutton .dropdown-content a{                          
+    background-color: #0C543E;
+    color: #FFFAFA;
+}
+
+#supportbutton .dropdown-container{
+    background-color: #0C543E;
+}
+
+/*--|| Dropdown hover effects--*/
+
+.dropdown-content a:hover{
+    background-color: #dddfc4;
+
+}
+
+.navli:hover .dropdown-container{
+    visibility: visible;
+}
+
+#supportbutton .dropdown-content a:hover{
+    background-color: #dddfc4;
+    color: black;
+}
+
+
+
+/*--|| Hero section (homepage)--*/
+
+.hero{
+    background-image: url('../IMG/Banner.png');
+    background-color: #535030;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: right;
+    padding-right: 15%;
+
+}
+
+.hero img{
+    max-width: 20%;
+}
+
+.hero h1{
+    color: #FFFAFA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*--|| Report-link  (homepage)--*/
+#report{
+    margin: 20px;
+}
+
+#report a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: #d3092a;
+    border-radius: 10px;
+    color: #FFFAFA;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*--|| Wellcome text section  (homepage)--*/
+
+.wellcomecontainer{
+    display: flex;
+    justify-content: center;  
+}
+
+.boxcontainer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.boxcontainer .button{
+    display: inline-block;
+    background-color: #dddfc4;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.boxcontainer .supportbutton{
+    background-color: #FFFAFA;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #FFD028;
+    display: inline-block;
+    max-width: 50%;
+}
+
+.boxcontainer img{
+    max-width: 100%;
+}
+
+.boxcontainer .button:hover{
+    border-style: solid;
+    border-color: #0C543E;
+}
+
+.boxcontainer .supportbutton:hover{
+    background-color: #FFD028;
+}
+
+/*--|| Animal container (homepage)--*/
+
+.animalcontainer{
+    text-align: center;
+    max-height: min-content;
+    border-radius: 10px;
+}
+
+.animalcontainer h1{
+    background-color: #dddfc4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: lighter;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.cardcontainer{
+    background-color: #dddfc4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.animalcard{
+    text-align: center;
+}
+
+.animalcard a{
+    text-decoration: none;
+    color: black;
+    background-color: #FFFAFA;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+.animalcard img{
+    max-width: 200px;
+    display: block;
+    border-radius: 400px;
+
+}
+
+.animalcard a:hover{
+    border-style: solid;
+    border-color: #0C543E;
+    color: black;
+}
+
+/*--|| Uppcoming events section (homepage)--*/
+
+.eventcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventcontainer h1{
+    padding-bottom: 10%;
+}
+
+.eventcontainer p{
+    display: inline-block;
+    text-align: justify;
+}
+
+.eventul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/*--||Sponsors (homepage)--*/
+
+.sponsorcontainer{
+    border-top-style: solid;
+    border-color: #535030;
+}
+
+.sponsorsubcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+   
+}
+
+.sponsorcontainer h1{
+    font-size: 20px;
+}
+
+.sponsorcontainer img{
+    max-width: 100px;
+    display: block;
+    padding: 5px;
+}
+
+/*---------------------------------------------------------------(footer, all pages))---------------------------------------------------------*/
+/*--|| Footer style (all pages)--*/
+
+footer{
+    background-color: #0C543E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: #FFFAFA;
+}
+
+.emergencynumber{
+    margin-left: 20px;
+    flex: 1;
+    border-left-style: solid;
+    padding-left:10px ;
+    border-color: #FFD028;
+}
+
+.emergencynumber h1{
+    font-size: 20px;    
+}
+
+.emergencynumber h2{
+    font-size: 15px;
+}
+
+.emergencynumber p{
+    font-size: 16px;
+}
+
+.aboutsection{
+    padding-right: 50px;
+}
+
+.aboutsection ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutsection li{
+    margin-bottom: 10px;
+}
+.aboutsection a{
+    color: #FFFAFA;
+    text-decoration: none;
+}
+
+.aboutsection h1{
+    font-size: 20px;
+}
+
+.contactsection{
+    padding-right: 20%;
+}
+
+.contactsection a{
+    color: #FFFAFA;
+    text-decoration: none;
+}
+
+.contactsection h1{
+    font-size: 20px;
+}
+
+.contactsection ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactsection li{
+    margin-bottom: 10px;
+}
+
+.followsection{
+    padding-right: 10px;
+}
+
+.followsection ul{
+    list-style: none;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.followsection h1{
+    text-align: center;  
+    font-size: 15px; 
+}
+
+.followsection img{
+    max-width: 40px;
+    padding: 10px;
+}
+
+.followsection img:hover{
+    opacity: 0.5;
+}
+
+.aboutsection a:hover{
+    color: #dddfc4;
+}
+
+.contactsection a:hover{
+    color: #dddfc4;
+}
+
+
+/*---------------------------------------------------------------Our animals (all animal pages)---------------------------------------------------------*/
+
+/*--|| Body grid layout (our animals)--*/
+.animalbody{
+    width: 100%;
+    background-color: #dddfc4b0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content auto min-content min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    '. hero .'
+    '. animalsection .'
+    '. adoptionsection .'
+    'footer footer footer';
+}
+
+
+.titlesection{
+    grid-area: hero;
+}
+
+.animalsection{
+    grid-area: animalsection;
+}
+
+.adoptionsection{
+    grid-area: adoptionsection;
+}
+
+
+/*--|| Intro section (our animals)--*/
+.titlesection{
+    text-align: center;
+}
+
+.titlesection h1{
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-color: #0C543E;
+}
+
+
+/*--|| Animals grid layout (our animals)--*/
+.animalgridcontainer{
+    border-radius: 5px;
+    margin:10px ;
+    background-color: #FFFAFA;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: min-content auto;
+    grid-template-areas: 
+    'image infographic infographic'
+    'image information information';
+}
+
+.imagecontainer{
+    grid-area: image;
+}
+
+.infographiccontainer{
+    grid-area: infographic;
+}
+
+.infotext{
+    grid-area: information;
+}
+
+/*--|| Animal displays styling (our animals)--*/
+
+.infographiccontainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infographiccontainer h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.infographiccontainer h2{
+    font-size: 16px;
+}
+
+.infotext{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.imagecontainer{
+    padding: 15px;
+    text-align: center;
+}
+
+.imagecontainer img{
+    max-width: 250px;
+}
+
+
+.adoptionsection{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.adoptionsection h1{
+    color: #0C543E;
+    font-size: 1.5rem;
+}
+
+
+.adoptionsection a{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-color: #FFFAFA;
+    color: #000000;
+    display: inline-block;
+    padding: 10px;
+}
+
+#sub-text{
+    font-size: 16px;
+}
+
+.adoptionsection a:hover{
+    background-color: #FFFAFA;
+    color: black;
+}
+
+
+
+/*---------------------------------------------------------------The Adoption process---------------------------------------------------------*/
+
+/* || Body layout (Adoption Process)*/
+
+.adoption-process-body{
+    background-color: #dddfc4b0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content auto min-content auto min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    '. adopt-intro .'
+    '. adopt-price .'
+    '. adopt-requirement .'
+    '. adopt-contract .'
+    'footer footer footer';
+}
+
+.adoption-intro-container{
+    grid-area: adopt-intro;
+}
+
+.adoption-price-container{
+    grid-area: adopt-price;
+}
+
+.adoption-requirements-container{
+    grid-area: adopt-requirement;
+}
+
+.adoption-contract-container{
+    grid-area: adopt-contract;
+}
+
+/* || Adoption Process container stylings (adoption process)*/
+
+.adoption-intro-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.adoption-intro-container h1{
+    margin-top: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom-style: solid;
+    border-color: #535030;
+}
+
+.adoption-price-container{
+    display: flex;
+    justify-content: space-around;
+    border-top-style: dotted;
+    border-color: #FFFAFA;
+}
+
+.adoption-price-container img{
+    max-width: 400px;
+}
+
+.adoption-price-container ul{
+    list-style: none;
+    text-align: left;
+}
+
+.adoption-price-container li{
+    margin-top: 20px;
+}
+
+/* || Adoption Requirements container style (adoption process)*/
+
+.adoption-requirements-container{
+    text-align: center;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-color: #FFFAFA;
+    padding: 10px;
+}
+
+.adoption-requirements-container ul{
+    margin-top: 30px;
+    list-style: none;
+   
+}
+
+.adoption-requirements-container li{
+    margin-bottom: 20px;
+}
+
+/* || Adoption Contract container style (adoption process)*/
+
+.adoption-contract-container{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.adoption-contract-container em{
+    font-weight: bold;
+}
+
+.adoption-contract-container a{
+    background-color: #FFFAFA;
+    border-style: solid;
+    border-color: #FFFAFA;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+
+.adoption-contract-container a:hover{
+    border-color: #0C543E;
+}
+
+
+.adoption-contract-container em:hover{
+    color: #0c543e;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------The Shelter---------------------------------------------------------*/
+/* || About the shelter grid layout (The shelter)*/
+
+.about-shelter-body{
+    background-color: #dddfc4b0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content auto min-content min-content min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    '. shelter-intro .'
+    '. shelter-story .'
+    '. shelter-goal .'
+    '. shelter-outro .'
+    'footer footer footer';
+}
+
+.shelter-intro-container{
+    grid-area: shelter-intro;
+}
+
+.shelter-story-container{
+    grid-area: shelter-story;
+}
+
+.shelter-goal-container{
+    grid-area: shelter-goal;
+}
+
+.shelter-outro-container{
+    grid-area: shelter-outro;
+}
+
+
+/* shelter intro section styling (The shelter)*/
+
+.shelter-intro-container h1{
+    padding-top: 50px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    border-color: #535030;
+}
+
+.shelter-intro-container{
+    text-align: center;
+}
+
+/* shelter story section styling (The shelter)*/
+
+.shelter-story-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shelter-story-container img{
+    max-width: 100%;
+}
+
+.shelter-story-container p{
+    text-align: justify;
+}
+
+/* shelter goal section styling (The shelter)*/
+
+.shelter-goal-container{
+    text-align: center;
+    border-bottom-style: dotted;
+    border-top-style: dotted;
+    border-color: #FFFAFA;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+}
+
+.shelter-goal-container ul{
+    list-style: url(/IMG/insignia.png);
+    padding-left: 50px;
+    text-align: left;
+}
+
+.shelter-goal-container li{
+    margin-bottom: 20px;
+}
+
+
+/* shelter outro section styling (The shelter)*/
+.shelter-outro-container{
+    text-align: center;
+}
+.shelter-outro-container img{
+    max-width: 75%;
+}
+
+.shelter-btn-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.shelter-btn-container a{
+    background-color: #FFFAFA;
+    border-style: solid;
+    border-color: #FFFAFA;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.shelter-btn-container a:hover{
+    border-color: #0C543E;
+    
+}
+
+
+/* || About the people grid layout (The people)*/
+/*---------------------------------------------------------------The People---------------------------------------------------------*/
+.about-people-body{
+    background-color: #dddfc4;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    '. people-intro .'
+    '. people-display .'
+    'footer footer footer';
+}
+
+.people-intro-container{
+    grid-area: people-intro;
+}
+
+.person-container{
+    grid-area: people-display;
+}
+
+
+/* || About the people styling (the people)*/
+
+/* || About the people intro section (the people)*/
+.people-intro-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.people-intro-container h1{
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+}
+
+.people-intro-container a{
+    background-color: #FFFAFA;
+    border-style: solid;
+    border-color: #FFFAFA;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.people-intro-container a:hover{
+    border-color: #0C543E;
+}
+
+/* || People displays section (the people)*/
+.person-container{
+    padding-bottom: 50px;
+}
+
+.person-card{
+    background-color: #FFFAFA;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.person-card img{
+    max-width: 200px;
+}
+
+.person-text{
+    display:block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+/* || About the people grid layout (Dontations)*/
+/*---------------------------------------------------------------Donations---------------------------------------------------------*/
+
+.donation-page-body{
+    background-color: #dddfc4b0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content min-content auto min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    'local-nav donationintro .'
+    '. moneydonation .'
+    '. itemdonation .'
+    'footer footer footer';
+}
+
+.local-navigation{
+    grid-area: local-nav;
+}
+
+.donation-intro-container{
+    grid-area: donationintro;
+}
+
+.money-donation-container{
+    grid-area: moneydonation;
+}
+
+.item-donation-container{
+    grid-area: itemdonation;
+}
+
+/*---------------------------------------------------------------Local nav all support pages---------------------------------------------------------*/
+.local-navigation{
+    background-color: #FFFAFA;
+    
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 30%;
+}
+
+.local-navigation h1{
+    font-size: 20px;
+    text-align: center;
+    color: #0C543E;
+}
+
+.local-navigation ul{
+    padding-right: 20px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.local-navigation li{
+    padding-bottom: 10px;
+    margin: 2px;
+}
+
+.local-navigation a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-color: #dddfc4;
+}
+
+.local-navigation a:hover{
+    background-color: #dddfc4;
+    border-radius: 10px;
+}
+
+/*--Donation intro section style--*/
+
+.donation-intro-container{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.donation-intro-container h1{
+    border-bottom-style: solid;
+    border-color: #535030;
+    padding-bottom: 5px;
+}
+
+/*--Money Donation Style--*/
+
+.money-donation-container{
+    text-align: center;
+    border-bottom-style: dotted;
+    border-top-style: dotted;
+    border-color: #FFFAFA;
+    border-radius: 5px;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.payment-container ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.payment-container a{
+    text-decoration: none;
+    border-style: solid;
+    border-color: #FFD028;
+    color: black;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.payment-container a:hover{
+    background-color: #FFD028;
+    color: black;
+}
+
+/*--Item donations styling--*/
+
+.item-donation-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-list-container{
+    display: flex;
+}
+
+.items-list-container ul{
+    text-align: left;
+}
+.items-list-container li{
+    display: flex;
+    font-size: 20px;
+    margin: 30px;
+    padding-left: 10px;
+    border-left-style: solid;
+    border-color: #FFFAFA;
+}
+
+.donation-contact-container{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.donation-contact-container img{
+    max-width: 200px;
+}
+
+.contact-details{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*---------------------------------------------------------------Memberships---------------------------------------------------------*/
+/*--Membersip styling--*/
+
+.member-body{
+    background-color: #dddfc4b0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content auto auto min-content min-content min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    'local-nav member-intro .'
+    '. member-help .'
+    '. member-give .'
+    '. member-form .'
+    '. member-outro .'
+    'footer footer footer';
+}
+
+.member-intro-container{
+    grid-area: member-intro;
+}
+
+.member-help-container{
+    grid-area: member-help;
+}
+
+.member-give-container{
+    grid-area: member-give;
+}
+
+.member-form-container{
+    grid-area: member-form;
+}
+
+.member-outro-container{
+    grid-area: member-outro;
+}
+
+/*--Membership intro container (membership)--*/
+
+.member-intro-container{
+    text-align: center;
+}
+
+.member-intro-container h1{
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+/*--Membership help container (membership)--*/
+.member-help-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.member-help-container p{
+    text-align: justify;
+}
+
+.member-help-container img{
+    max-width: 300px;
+}
+
+/*--Membership give container (membership)--*/
+.member-give-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.member-give-container p{
+    text-align: justify;
+}
+
+.member-give-container img{
+    max-width: 300px;
+}
+
+
+/*--Form container--*/
+/*---------------------------------------------------------------Memberships form style---------------------------------------------------------*/
+.member-form-container{
+    background-color: #FFFAFA;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#fcontact{
+    border-style: none;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content;
+}
+
+#fcontact label{
+padding: 10px;
+margin-top: 10px;
+font-weight: bold;
+}
+
+
+#fcontact input{
+    padding: 10px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #0C543E;
+}
+
+#faddress{
+    border-style: none;
+   display: grid;
+   grid-template-columns: min-content 1fr 0.5fr;
+   max-width: 50%;   
+}
+
+#faddress label{
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#faddress input{
+    padding: 10px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #0C543E;
+    
+}
+
+#faddress #fstreet{
+    margin-right: 10px;
+}
+
+#flocation{
+    border-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50%;
+    gap: 10px;
+    margin-left: 15%;
+}
+
+#flocation input{
+    padding: 10px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #0C543E;
+}
+
+#fmember-type{
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25%;
+}
+
+#fmember-type h1{
+    font-size: 15px;
+}
+
+#fmember-payment{
+    border-style: none;
+    padding-left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#fmember-type label{
+    text-align: right;
+}
+
+#fmember-payment h1{
+    font-size: 15px
+}
+
+
+.member-form-container button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #dddfc4b0;
+    color: black;
+    border-style: none;
+    border-radius: 15px;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+
+.member-form-container button:hover{
+    cursor: pointer;
+    background-color: #FFD028;
+    color: black;
+}
+
+.member-outro-container{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.member-outro-container a{
+    background-color: #FFFAFA;
+    border-style: solid;
+    border-color: #FFFAFA;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.member-outro-container a:hover{
+    border-color: #0C543E;
+   
+}
+
+/*---------------------------------------------------------------Foster Family---------------------------------------------------------*/
+/*|| Foster family (grid layout)*/
+
+.foster-body{
+    background-color: #dddfc4b0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content auto auto min-content min-content min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    'local-nav foster-intro .'
+    '. foster-what .'
+    '. foster-why .'
+    '. foster-req .'
+    '. foster-contact .'
+    'footer footer footer';
+
+    }
+
+    .foster-intro-container{
+        grid-area: foster-intro;
+    }
+
+    .foster-what-container{
+        grid-area: foster-what;
+    }
+
+    .foster-why-container{
+        grid-area: foster-why;
+    }
+
+    .foster-requirement-container{
+        grid-area: foster-req;
+    }
+
+    .foster-contact-container{
+        grid-area: foster-contact;
+    }
+    
+
+/*--foster intro container (foster home)--*/
+
+.foster-intro-container{
+    text-align: center;
+}
+
+.foster-intro-container h1{
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+/*--foster what container (foster home)--*/
+.foster-what-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.foster-what-container p{
+    text-align: justify;
+}
+
+.foster-what-container img{
+    max-width: 300px;
+}
+
+/*--foster why container (foster home)--*/
+.foster-why-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.foster-why-container p{
+    text-align: justify;
+}
+
+.foster-why-container img{
+    max-width: 300px;
+}
+
+/*--foster requirements container (foster-home)--*/
+.foster-requirement-container{
+    text-align: center;
+    background-color: #FFFAFA;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.foster-requirement-container ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 25%;
+}
+
+.foster-requirement-container ul li{
+    margin-bottom: 20px;
+}
+
+/*--foster contact container (foster home)--*/
+.foster-contact-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.foster-contact-container a{
+    background-color: #FFFAFA;
+    border-style: solid;
+    border-color: #FFFAFA;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.foster-contact-container a:hover{
+   border-color: #0C543E;
+}
+
+/*---------------------------------------------------------------Contact page---------------------------------------------------------*/
+/*--Contact intro grid layout--*/
+
+.contact-body{
+    background-color: #dddfc4b0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content min-content min-content auto min-content min-content;
+    grid-template-areas: 
+    'navigation navigation navigation'
+    '. contact-intro .'
+    '. contact-detail .'
+    '. contact-map .'
+    '. contact-form .'
+    'footer footer footer';
+}
+
+.contact-intro-container{
+    grid-area: contact-intro;
+}
+
+.contact-details-container{
+    grid-area: contact-detail;
+}
+
+.map-container{
+    grid-area: contact-map;
+}
+
+.contact-form{
+    grid-area: contact-form
+}
+
+/*--Contact styling--*/
+
+.contact-intro-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-intro-container h1{
+    margin-top: 50px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+}
+
+.contact-details-container ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.contact-details-container ul li{
+    text-align: center;
+}
+
+.map-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-form{
+    text-align: center;
+    background-color: #FFFAFA;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+#ftext-message{
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#ftext-message input{
+    padding: 10px;
+    min-height: 100px;
+    border-style: solid;
+    border-color: #0C543E;
+}
+
+#ftext-message label{
+    font-weight: bold;
+    padding-bottom: 10px
+}
+
+.contact-body button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #dddfc4b0;
+    color: black;
+    border-style: none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.contact-body button:hover{
+    cursor: pointer;
+    background-color: #FFD028;
+    color: black;
+}
+
+
+/*---------------------------------------------------------------Media Q 1400px---------------------------------------------------------*/
+@media screen and (max-width: 1400px){
+
+    #report a{
+        font-size: 10px;
+    }
+
+     /*||Home-Page*/
+     .homepage{
+        grid-template-columns: 10% auto 10%;
+       
+    }
+
+    /*||Animals-Pages (all animal pages)*/
+    .animalbody{
+
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+ 
+    }
+
+    /*||Adoption-process-Page*/
+
+    .adoption-process-body{
+        grid-template-columns: 10% auto 10%;
+      
+    }
+
+    /*The Animal Shelter*/
+    
+    .about-shelter-body{
+        grid-template-columns: 10% auto 10%;
+     
+    }
+    
+    /*The Pople*/
+    .about-people-body{
+        grid-template-columns: 10% auto 10%;
+        
+    }
+
+    /*||Support-donation-Page*/
+    .donation-page-body{
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: min-content min-content min-content auto min-content;
+        grid-template-areas: 
+        'navigation navigation navigation'
+        '. local-nav .'
+        '. donationintro .'
+        '. moneydonation .'
+        '. itemdonation .'
+        'footer footer footer';
+
+    }
+
+    .local-navigation{
+        flex-direction: row;
+    }
+
+    .local-navigation{
+        margin: 0;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0;
+        max-width: max-content;
+    }
+    
+    .local-navigation ul{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 0; 
+    }
+    
+    .local-navigation h1{
+        display: none;
+    }
+
+    /*Foster home*/
+    .foster-body{
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: min-content min-content min-content auto min-content;
+        grid-template-areas: 
+        'navigation navigation navigation'
+    '. local-nav .'
+    '. foster-intro .'
+    '. foster-what .'
+    '. foster-why .'
+    '. foster-req .'
+    '. foster-contact .'
+    'footer footer footer';
+    }
+
+    /*Membership*/
+
+    .member-body{
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: min-content min-content min-content auto min-content;
+        grid-template-areas: 
+        'navigation navigation navigation'
+    '. local-nav .'
+    '. member-intro .'
+    '. member-help .'
+    '. member-give .'
+    '. member-form .'
+    '. member-outro .'
+    'footer footer footer';
+
+    }
+
+    .contact-body{
+        grid-template-columns: 10% auto 10%;
+    }
+}
+
+/*---------------------------------------------------------------Media Q 1000px---------------------------------------------------------*/
+
+@media screen and (max-width: 1000px){
+    .foster-requirement-container ul{
+        padding-left: 5%;
+    }
+}
+
+
+/*---------------------------------------------------------------Media Q 900px---------------------------------------------------------*/
+@media screen and (max-width: 900px){
+    /*||Homepage*/
+
+    #report a{
+        display: none;
+    }
+
+
+    .cardcontainer{
+        flex-direction: column;
+        max-width: 50%;
+        margin-left: 25%;
+    }   
+    
+    .animalcard{
+        margin-bottom: 20px;
+    }
+
+/*||footer*/
+    footer{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;  
+
+    }
+
+    .contactsection{
+        padding: 0;
+        text-align: center;
+    }
+
+    .aboutsection{
+        padding: 0;
+        text-align: left;
+    }
+    
+    .emergencynumber{
+        margin: 0;
+        border-style: solid;
+        border-color: #dddfc4;
+        padding: 10px;
+    }
+
+    /*||Animals-Pages (all animal pages)*/
+    .animalgridcontainer{
+        grid-template-columns:auto;
+        grid-template-rows: auto min-content min-content;
+        grid-template-areas: 
+        'image'
+        'infographic'
+        'information';
+    }
+
+    /*The people*/
+    .person-text p{
+        font-size: 16px;
+    }
+
+    /*Membership*/
+    .member-help-container, .member-give-container{
+        flex-direction: column;
+    }
+
+    .member-help-container img, .member-give-container img{
+        max-width: 100%;
+    }
+
+    /*contact page*/
+    .contact-details-container ul{
+        flex-direction: column;
+    }
+
+    .contact-details-container ul li{
+        border-bottom-style: solid;
+        border-color: #FFFAFA;
+    }
+
+    iframe{
+        max-width: 100%;
+    }
+
+}
+
+/*---------------------------------------------------------------Media Q 870px---------------------------------------------------------*/
+@media screen and (max-width: 870px){
+
+    /*||Navigation bar*/
+
+    header{
+        background-color: #FFFAFA;
+    }
+    .navbar, .navul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        background-color: #dddfc4;
+    }
+
+    .navbar{
+        border-bottom-style: solid;
+        border-width: 10px;
+        border-color: #FFFAFA;
+    }
+
+    .navul #mobile-home-link, .navul #mobile-contact-link{
+        display: inline-block;
+    }
+  
+    #menuicon{
+        background-image: url(../IMG/burger-bar.png);
+        background-position: center;
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    #menucheckbox ~ .navbar{
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #menucheckbox:checked ~ .navbar {
+        display: flex;
+    }
+
+    .dropdown-container:hover{
+       display: none;
+    }
+
+    #animal-checkbox ~ .dropdown-container{
+        display: none;
+    }
+
+    #animal-checkbox:checked ~ .dropdown-container{
+        display: flex;
+        padding-left: 20px;
+        position: relative;
+        background-color: #FFFAFA;
+    }
+
+    #about-checkbox ~ .dropdown-container{
+        display: none;
+    }
+
+    #about-checkbox:checked ~ .dropdown-container{
+        display: flex;
+        padding-left: 20px;
+        position: relative;
+        background-color: #FFFAFA;
+    }
+
+    #support-checkbox ~ .dropdown-container{
+        display: none;
+    }
+
+    #support-checkbox:checked ~ .dropdown-container{
+        display: flex;
+        padding-left: 20px;
+        position: relative;
+        background-color: #FFFAFA;
+    }
+
+
+    .navli a, .navli label{
+        background-color: #dddfc4;
+        color: #535030;
+        border-bottom-style: solid;
+        border-color: #FFFAFA;
+        border-radius: 0px;
+    }
+
+    .dropdown-content a{
+        background-color: #FFFAFA;
+        border-radius: 10px;
+        font-weight: bold;
+        
+    }
+ 
+    #supportbutton label{
+        background-color: #dddfc4;
+        color: #535030;
+        border-style: none;
+        border-bottom-style: solid;
+        border-color: #FFFAFA;
+        border-radius: 0px;
+    }
+
+    #supportbutton .dropdown-content a{
+        color: #535030;
+        background-color: #FFFAFA;
+    }
+    
+    .navcontact{
+       display: none;
+    }
+
+    .local-navigation{
+        display: none;
+    }
+}
+
+/*---------------------------------------------------------------Media Q 800px---------------------------------------------------------*/
+    @media screen and (max-width: 800px){
+
+    /*||Home page*/
+
+    .wellcomecontainer{
+        flex-direction: column;
+    }
+
+    .eventcontainer{
+        flex-direction: column-reverse;
+    }
+
+   .boxcontainer{
+       margin-top: 10px;
+       margin-bottom: 10px;
+   }
+
+   .sponsorcontainer img{
+       max-width: 50px;
+   }
+
+   /*Adoption process page*/
+
+.adoption-price-container{
+    flex-direction: column;
+}
+
+/*donation page*/
+.member-give-container img, .member-help-container img{
+    max-width: 100%;
+}
+
+
+/*foster home*/
+.foster-what-container, .foster-why-container{
+    flex-direction: column;
+}
+
+.foster-what-container img, .foster-why-container img{
+    max-width: 100%;
+}
+
+
+        /*Donation page*/
+
+        .items-list-container{
+            display: inline-block;
+          }
+  
+          .donation-contact-container img{
+              max-width: 200px;
+          }
+
+
+    /*The Animal Shelter*/
+
+    .shelter-story-container{
+        flex-direction: column;
+    }
+
+    /*contact*/
+
+    .contact-details-container ul{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+
+   
+}
+
+@media screen and (max-width:660px){
+    .donation-contact-container{
+        flex-direction: column;
+    }
+}
+
+/*---------------------------------------------------------------Media Q 550px---------------------------------------------------------*/
+
+@media screen and (max-width: 550px){
+
+    body h1{
+        font-size: 20px;
+    }
+
+    body h2{
+        font-size: 17px;
+    }
+
+    body p{
+        font-size: 16px;
+    }
+
+
+/*Home page*/
+    .hero img{
+        max-width: 50%;
+    }
+
+    .hero{
+        padding-right: 10px;
+    }
+
+    
+
+    .wellcomecontainer{
+        align-items: center;
+    }
+
+    .animalcontainer img{
+
+        max-width: 100%;
+    }
+
+    
+
+    /*Animals pages*/
+
+    .animalbody{
+        grid-template-areas: 
+        'navigation navigation navigation'
+        '. hero .'
+        'animalsection animalsection animalsection'
+        '. adoptionsection .'
+        'footer footer footer';
+        }
+
+        .infographiccontainer div{
+           border-left-style: solid;
+           border-color: #dddfc4;
+            width: max-content;
+            text-align: center;
+            padding: 1px;
+            margin: 3px;
+        }
+
+        .cardcontainer{
+            max-width: 100%;
+            margin: 0;
+        }
+
+        /*Adoption process page*/
+      
+        .adoption-price-container{
+            justify-content: center;
+            align-items: center;  
+        }
+
+        .adoption-price-container img{
+            max-width: 250px;
+        } 
+
+        .adoption-requirements-container ul{
+            padding: 0;
+
+        }
+        
+        .local-navigation{
+            font-size: 15px;
+        }
+
+        /*The Animal Shelter*/
+        .shelter-btn-container{
+            flex-direction: column;
+        }
+
+        .shelter-btn-container div{
+            margin-top: 20px;
+        }
+
+         /*the people*/
+
+    .person-card{
+        flex-direction: column;
+        background-color: #dddfc4;
+    }
+
+
+    .payment-container ul{
+        flex-direction: column;
+    }
+
+    .payment-container ul li a{
+        margin: 10px;
+        display: inline-block;
+    }
+
+    /*membership*/
+    #member-form #flocation, #member-form #faddress{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-left: 10%;
+    }
+
+    #member-form button{
+        margin-left: 25%;
+    }
+
+
+}
+
+/*---------------------------------------------------------------Media Q 400px---------------------------------------------------------*/
+@media screen and (max-width: 400px){
+
+    /*Adoption process page*/
+    .adoption-price-container{
+        align-items: flex-start;
+    }
+
+    .items-list-container ul{
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*contact page*/
+    .contact-form label{
+        font-size: 13px;
+        font-weight: normal;
+    }
+}
+
+
