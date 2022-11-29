@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PetRescue Home</title>
+    <link rel="stylesheet" href="../CSS/Styles.css">
+</head>
+
+<body>
+    <!-- Main container for homepage-->
+    <div class="homepage">
+
+        <!-- Header with navigation bar-->
+        <header>
+            <label for="menucheckbox" id="menuicon"></label>
+            <input type="checkbox" id="menucheckbox">
+            <nav class="navbar">
+
+                <a href="../HTML/index.html"><img class="logo" src="../IMG/dog-track.png" alt="Shelter-logo"></a>
+
+                <ul class="navul">
+
+                    <li class="navli" id="mobile-home-link">
+                        <a href="../HTML/index.html">Home</a>
+                    </li>
+
+                    <li class="navli">
+                        <label for="animal-checkbox">Our Animals ></label>
+                        <input type="checkbox" id="animal-checkbox">
+                        <ul class="dropdown-container">
+                            <li class="dropdown-content"><a href="../HTML/Animals/cats.html">Cats</a></li>
+                            <li class="dropdown-content"><a href="../HTML/Animals/dogs.html">Dogs</a></li>
+                            <li class="dropdown-content"><a href="../HTML/Animals/smallanimals.html">Small animals</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="navli">
+                        <a href="../HTML/AdoptionProcess.html">Adoption Process</a>
+                    </li>
+
+                    <li class="navli">
+                        <label for="about-checkbox">About us ></label>
+                        <input type="checkbox" id="about-checkbox">
+                        <ul class="dropdown-container">
+                            <li class="dropdown-content"><a href="../HTML/About/Shelter.html">The Shelter</a></li>
+                            <li class="dropdown-content"><a href="../HTML/About/People.html">The People</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navli" id="supportbutton">
+                        <label for="support-checkbox">Support the shelter></label>
+                        <input type="checkbox" id="support-checkbox">
+                        <ul class="dropdown-container">
+                            <li class="dropdown-content"><a href="../HTML/Support/Donation.html">Donations</a></li>
+                            <li class="dropdown-content"><a href="../HTML/Support/FosterHome.html">Foster Home</a></li>
+                            <li class="dropdown-content"><a href="../HTML/Support/member2.html">Membership</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navli" id="mobile-contact-link">
+                        <a href="../HTML/Contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a class="navcontact" href="../HTML/Contact.html">Contact</a>
+
+            </nav>
+        </header>
+
+          <!-- Banner section-->
+        <div class="hero">
+            <img src="../IMG/Logo_White.png" alt="Shelter-logo">
+        </div>
+
+        <!-- Repport section-->
+        <div id="report">
+            <a href="../HTML/rapport.html" target="_blank">Rapport</a>
+        </div>
+
+        <!-- Wellcome section-->
+        <div class="wellcomecontainer">
+            <div class="boxcontainer">
+                <h1>Wellcome to the PetRescue</h1>
+                <p>The PetRescue is a charity organization that aims to save pets in need. We belive that every animal
+                    deserves love and care.</p>
+                <a class="button" href="../HTML/About/People.html">Want to learn more about us?</a>
+            </div>
+
+            <div class="boxcontainer">
+                    <img src="../IMG/DoggyHead.png" alt="Dog-Head">
+                <h2>We need your help!</h2>
+                <a class="supportbutton" href="../HTML/Support/Donation.html">Make a donation</a>
+            </div>
+        </div>
+
+        <!-- Animals section-->
+        <div class="animalcontainer" id="our-animals">
+            <h1>
+                Meet our animals
+            </h1>
+
+            <div class="cardcontainer">
+                <div class="animalcard">
+                    <picture>
+                        <source srcset="../IMG/doghomeimg1.png" media="(min-width: 1240px)">
+                        <source srcset="../IMG/doghomeimg2.png" media="(min-width: 500px)">
+                        <img src="../IMG/doghomeimg1.png" alt="dog-head">
+                    </picture>
+                  
+                   
+                    <a href="../HTML/Animals/dogs.html">Dogs</a>
+                </div>
+
+                <div class="animalcard">
+                    <picture>
+                        <source srcset="../IMG/Cathomeimg1.png" media="(min-width: 1240px)">
+                        <source srcset="../IMG/Cathomeimg2.png" media="(min-width: 500px)">
+                        <img src="../IMG/Cathomeimg1.png" alt="cat-head">
+                    </picture>
+                  
+                    <a href="../HTML/Animals/cats.html">Cats</a>
+                </div>
+
+                <div class="animalcard">
+                    <picture>
+                        <source srcset="../IMG/smalAnimalhomeimg1.png" media="(min-width: 1240px)">
+                        <source srcset="../IMG/smalAnimalhomeimg2.png" media="(min-width: 500px)">
+                        <img src="../IMG/smalAnimalhomeimg1.png" alt="rabit">
+                    </picture>
+                  
+                    <a href="../HTML/Animals/smallanimals.html">Small pets</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Uppcoming event section-->
+        <div class="eventcontainer">
+
+            <div class="boxcontainer">
+                <img src="../IMG/Event.png" alt="cute-dog">
+            </div>
+
+            <div class="boxcontainer">
+                <h1>Uppcoming Events</h1>
+                <ul class="eventul">
+                    <li class="eventli">Date: 2022-12-13</li>
+                    <li class="eventli">Time: 11.00-17.00</li>
+                    <li class="eventli">Place: Gardenstreet 87</li>
+                </ul>
+                <p>The dog trainer and media profile Anna Bockhart will be leading a scesion on mental stimulation for dogs. All four leged friends are also wellcome!</p>
+            </div>
+        </div>
+
+        <!-- Sponsor section-->
+        <div class="sponsorcontainer">
+            <h1>
+                Sponsored by....
+            </h1>
+            <div class="sponsorsubcontainer">
+                <img src="../IMG/paypal-logo.png" alt="Paypal-sponsor-img">
+                <img src="../IMG/amd.png" alt="amd-sponsor-img">
+                <img src="../IMG/adobe.png" alt="adobe-sponsor-img">
+            </div>
+        </div>
+
+        <!-- footer section-->
+        <footer>
+            <div class="emergencynumber">
+                <h1>Emergency numbers</h1>
+                <h2>Veterinarian</h2>
+                <p>phone number 210980234</p>
+                <h2>Wild animal rescue</h2>
+                <p>phone number 902802032</p>
+
+            </div>
+
+            <div class="aboutsection">
+                <h1>About Us</h1>
+                <ul>
+                    <li><a href="../HTML/About/Shelter.html">The Shelter</a></li>
+                    <li><a href="../HTML/About/People.html">The People</a></li>
+                </ul>
+            </div>
+
+            <div class="contactsection">
+                <h1><a href="../HTML/Contact.html">Contact us</a></h1>
+                <ul>
+                    <li>Phone: 09807073837</li>
+                    <li>Email: petrescue@gmail.com</li>
+                    <li>Address: Sieverstrasse 33a</li>
+                    <li>Opening times: 11.00-17.00</li>
+                </ul>
+            </div>
+            <div class="followsection">
+                <h1>follow us:</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><img src="../IMG/instagram.png" alt="Instagram-logo"></a>
+                    </li>
+                    <li> <a href="https://www.facebook.com/home.php"><img src="../IMG/facebook.png"
+                                alt="Facebook-logo"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

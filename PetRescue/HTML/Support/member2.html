@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetRescue-membership</title>
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+</head>
+
+<body>
+    <div class="member-body">
+
+        <!-- Header with navigation bar-->
+        <header>
+            <label for="menucheckbox" id="menuicon"></label>
+            <input type="checkbox" id="menucheckbox">
+            <nav class="navbar">
+
+                <a href="../../HTML/index.html"><img class="logo" src="../../IMG/dog-track.png" alt="Shelter-logo"></a>
+
+                <ul class="navul">
+
+                    <li class="navli" id="mobile-home-link">
+                        <a href="../../HTML/index.html">Home</a>
+                    </li>
+
+                    <li class="navli">
+                        <label for="animal-checkbox">Our Animals ></label>
+                        <input type="checkbox" id="animal-checkbox">
+                        <ul class="dropdown-container">
+                            <li class="dropdown-content"><a href="../../HTML/Animals/cats.html">Cats</a></li>
+                            <li class="dropdown-content"><a href="../../HTML/Animals/dogs.html">Dogs</a></li>
+                            <li class="dropdown-content"><a href="../../HTML/Animals/smallanimals.html">Small animals</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="navli">
+                        <a href="../../HTML/AdoptionProcess.html">Adoption Process</a>
+                    </li>
+
+                    <li class="navli">
+                        <label for="about-checkbox">About us ></label>
+                        <input type="checkbox" id="about-checkbox">
+                        <ul class="dropdown-container">
+                            <li class="dropdown-content"><a href="../../HTML/About/Shelter.html">The Shelter</a></li>
+                            <li class="dropdown-content"><a href="../../HTML/About/People.html">The People</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navli" id="supportbutton">
+                        <label for="support-checkbox">Support the shelter></label>
+                        <input type="checkbox" id="support-checkbox">
+                        <ul class="dropdown-container">
+                            <li class="dropdown-content"><a href="../../HTML/Support/Donation.html">Donations</a></li>
+                            <li class="dropdown-content"><a href="../../HTML/Support/FosterHome.html">Foster Home</a></li>
+                            <li class="dropdown-content"><a href="../../HTML/Support/member2.html">Membership</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navli" id="mobile-contact-link">
+                        <a href="../../HTML/Contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a class="navcontact" href="../../HTML/Contact.html">Contact</a>
+
+            </nav>
+        </header>
+
+
+         <!-- Local navigation section-->
+        <div class="local-navigation">
+            <h1>Other ways to help</h1>
+            <ul>
+                <li>
+                    <a href="../../HTML/Support/Donation.html"> Donation</a>
+                </li>
+
+                <li><a href="../../HTML/Support/member2.html">Become a member</a>
+                </li>
+
+                <li><a href="../../HTML/Support/FosterHome.html"> Become a foster family</a>
+                </li>
+            </ul>
+        </div>
+
+ <!-- Member intro section-->
+        <div class="member-intro-container">
+            <h1>Membership</h1>
+            <p>One of our main sources of income comes from our trusty members. The support from you helps us
+                tremendously</p>
+        </div>
+
+ <!-- Member help section-->
+        <div class="member-help-container">
+            <div class="boxcontainer">
+                <h1>What does it mean to be a member?</h1>
+                <p>As a member you support our work in more than one way. The economical contribution helps with our
+                    medical bills and care taking costs, but you also help us on a political level as you become a part
+                    of our partitionings toward better animal care.</p>
+            </div>
+
+            <div class="boxcontainer">
+                <img src="../../IMG/DoggyHead.png" alt="cutedog">
+            </div>
+        </div>
+
+ <!-- Member give section-->
+        <div class="member-give-container">
+            <div class="boxcontainer">
+                <h1>What will you get as a member?</h1>
+                <p>As a member you do not only support us, you also get exclusive acces to our weekly letters and news
+                </p>
+                <p>Furthermore, all members are invited to our anual meetings were your ideas can come to life</p>
+            </div>
+
+            <div class="boxcontainer">
+                <img src="../../IMG/Event.png" alt="cutedog">
+            </div>
+        </div>
+
+         <!-- Member form section-->
+        <div class="member-form-container">
+            <h1>Want to become a member</h1>
+            <h2>Fill in our <em>Form</em> and sign up</h2>
+
+            <form id="member-form">
+                <fieldset id="fcontact">
+                    <label>Name</label>
+                    <input type="text" name="fname" placeholder="name" required>
+                    <label>Email</label>
+                    <input type="email" name="femail" placeholder="email" required>
+                </fieldset>
+
+                <fieldset id="faddress">
+                    <label> Adress </label>
+                    <input type="text" name="fstreet-name" id="fstreet" placeholder="Street name" required>
+                    <input type="text" name="fstreet-number" id="fnr" placeholder="nr" required>
+                </fieldset>
+
+                <fieldset id="flocation">
+                    <input type="text" id="fzip" placeholder="Zip-code" required>
+                    <input type="text" name="fcity-name" id="city-name" placeholder="City" required>
+                </fieldset>
+
+                <fieldset id="fmember-type">
+                    <h1>How long membership do you want?</h1>
+                    <label for="12month"><input type="radio" name="member" value="12-month" id="12month">12 months (15 Euro) </label>
+                    <label for="6month"><input type="radio" name="member" value="6-month" id="6month">6 months (10 Euro)</label>
+                </fieldset>  
+
+                <fieldset id="fmember-payment">
+                    <h1>How do you want to pay?</h1>
+                    <label><input type="radio" name="pay" value="swish">Swish</label>
+                    <label><input type="radio" name="pay" value="card">Credit Card</label>
+                    <label><input type="radio" name="pay" value="paypal">Paypal</label>
+                </fieldset>  
+
+                <button>Pay and sign up</button>
+
+            </form>
+        </div>
+
+        <div class="member-outro-container">
+            <p>Not sure and would like to know more before making a comitment? Feel free to read more about our shelter
+                and the team</p>
+            <a href="../../HTML/About/Shelter.html">About the shelter</a>
+        </div>
+
+ <!-- footer section-->
+ <footer>
+    <div class="emergencynumber">
+        <h1>Emergency numbers</h1>
+        <h2>Veterinarian</h2>
+        <p>phone number 210980234</p>
+        <h2>Wild animal rescue</h2>
+        <p>phone number 902802032</p>
+
+    </div>
+
+    <div class="aboutsection">
+        <h1>About Us</h1>
+        <ul>
+            <li><a href="../../HTML/About/Shelter.html">The Shelter</a></li>
+            <li><a href="../../HTML/About/People.html">The People</a></li>
+        </ul>
+    </div>
+
+    <div class="contactsection">
+        <h1><a href="../../HTML/Contact.html">Contact us</a></h1>
+        <ul>
+            <li>Phone: 09807073837</li>
+            <li>Email: petrescue@gmail.com</li>
+            <li>Address: Sieverstrasse 33a</li>
+            <li>Opening times: 11.00-17.00</li>
+        </ul>
+    </div>
+    <div class="followsection">
+        <h1>follow us:</h1>
+        <ul>
+            <li><a href="https://www.instagram.com/"><img src="../../IMG/instagram.png" alt="Instagram-logo"></a>
+            </li>
+            <li> <a href="https://www.facebook.com/home.php"><img src="../../IMG/facebook.png"
+                        alt="Facebook-logo"></a></li>
+        </ul>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
